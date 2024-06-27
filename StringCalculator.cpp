@@ -1,6 +1,6 @@
 #include "StringCalculator.h"
 
-int StringCalculator::Add(std::string numbers)
+int StringCalculator::add(std::string numbers)
 {
   return 0;
 }
