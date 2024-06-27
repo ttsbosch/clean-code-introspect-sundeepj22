@@ -9,4 +9,5 @@ public:
 int add(std::string numbers);
 private:
 void ExtractDigits(const std::string& input, std::vector<std::int32_t>& digit_list);
+void CheckNumberIsNegative(const std::vector<std::int32_t>& digit_list);
 };
