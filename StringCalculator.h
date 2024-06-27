@@ -3,5 +3,5 @@
 class StringCalculator
 {
 public:
-int Add(std::string numbers);
+int add(std::string numbers);
 };
