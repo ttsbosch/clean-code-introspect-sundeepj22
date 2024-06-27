@@ -24,11 +24,11 @@ void StringCalculator::ExtractDigits(const std::string& input, std::vector<std::
 
 void StringCalculator::CheckNumberIsNegative(const std::vector<std::int32_t>& digit_list)
 {
-    const auto findItr{find_if(digit_list.begin(), digit_list.end(), [](std::int32_t digit){
+    auto findItr = std::find_if(digit_list.begin(), digit_list.end(), [](std::int32_t digit) {
         return digit < 0;
-    })};
-    if (findItr != std::end(digit_list))
-    {
-        throw std::runtime_error;
+    });
+
+    if (findItr != digit_list.end()) {
+        throw std::runtime_error("Negative number found in digit_list");
     }
 }
