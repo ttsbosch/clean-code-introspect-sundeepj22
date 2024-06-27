@@ -1,8 +1,13 @@
-#include<iostream>
-#include<string>
+#include <string>
+#include <vector>
+#include <cctype>
+#include <numeric> // for std::accumulate
 
-using namespace std;
-class StringCalculator{
-    public:
-    int add(string input);
+class StringCalculator
+{
+public:
+int add(std::string numbers);
+private:
+void ExtractDigits(const std::string& input, std::vector<std::int32_t>& digit_list);
+void CheckNumberIsNegative(const std::vector<std::int32_t>& digit_list);
 };
