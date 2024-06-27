@@ -1,7 +1,4 @@
 #include "StringCalculator.h"
-#include <vector>
-#include <cctype>
-#include <numeric> // for std::accumulate
 
 int StringCalculator::add(std::string numbers)
 {
