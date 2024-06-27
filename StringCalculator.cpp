@@ -1,5 +1,6 @@
 #include "StringCalculator.h"
 #include <stdexcept>
+#include <algorithm>
 
 int StringCalculator::add(std::string numbers)
 {
