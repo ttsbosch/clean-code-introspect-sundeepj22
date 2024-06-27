@@ -1,4 +1,5 @@
 #include "StringCalculator.h"
+#include <iostream>
 #include <stdexcept>
 #include <algorithm>
 
@@ -25,7 +26,9 @@ void StringCalculator::ExtractDigits(const std::string& input, std::vector<std::
 
 void StringCalculator::CheckNumberIsNegative(const std::vector<std::int32_t>& digit_list)
 {
+    std::cout << " digit_list size:" << digit_list.size() << std::endl;
     auto findItr = std::find_if(digit_list.begin(), digit_list.end(), [](std::int32_t digit) {
+        std::cout << " digit:" << digit << std::endl;
         return digit < 0;
     });
 
