@@ -27,7 +27,7 @@ void StringCalculator::CheckNumberIsNegative(const std::vector<std::int32_t>& di
     const auto isNumberNegative{find_if(digit_list.begin(), digit_list.end(), [](std::int32_t digit){
         return digit < 0;
     })};
-    if (isDigitNegative)
+    if (isNumberNegative)
     {
         throw std::runtime_error;
     }
