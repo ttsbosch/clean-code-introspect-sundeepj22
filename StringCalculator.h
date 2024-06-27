@@ -1,4 +1,4 @@
-#inlcude <string>
+#include <string>
 
 class StringCalculator
 {
