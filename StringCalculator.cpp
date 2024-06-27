@@ -6,6 +6,7 @@
 int StringCalculator::add(std::string numbers)
 {
     std::vector<std::int32_t> digit_list;
+    ExtractDigits(numbers, digit_list);
     std::int32_t sumOfDigitList{std::accumulate(digit_list.begin(), digit_list.end(), 0)};
     return sumOfDigitList;
 }
