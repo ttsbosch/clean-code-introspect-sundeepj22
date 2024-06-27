@@ -1,4 +1,7 @@
 #include <string>
+#include <vector>
+#include <cctype>
+#include <numeric> // for std::accumulate
 
 class StringCalculator
 {
